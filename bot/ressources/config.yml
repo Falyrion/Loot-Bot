@@ -6,19 +6,31 @@
 token: 0
 
 # ######################################################################################################################
-# Loot
+# Twitch Loot
 # ######################################################################################################################
+twitch:
+  # The command to use in chat to display current prime gaming content
+  command: "!twitch"
 
-# The command to use in chat to display current prime gaming content
-command_for_content: "!twitch"
+  # Message type
+  # - Choose 0 if you want all loot displayed in a single message from the bot
+  # - Choose 1 if you want an individual message for each loot (this might spam the chat very quickly)
+  message_type: 1
 
-# Message type
-# - Choose 0 if you want all loot displayed in a single message from the bot
-# - Choose 1 if you want an individual message for each loot (this might spam the chat very quickly)
-message_type: 1
+  # List of games to display if there is loot
+  games_to_include:
+    - Overwatch
+    - World of Warcraft
+    - Fall Guys
 
-# List of games to display if there is loot
-games_to_include:
-  - Overwatch
-  - World of Warcraft
-  - Fall Guys
+# ######################################################################################################################
+# Epic Games
+# ######################################################################################################################
+epic:
+  # The command to use in chat to display current free epic games content
+  command: "!epic"
+
+  # Message type
+  # - Choose 0 if you want all loot displayed in a single message from the bot
+  # - Choose 1 if you want an individual message for each loot (this might spam the chat very quickly)
+  message_type: 1

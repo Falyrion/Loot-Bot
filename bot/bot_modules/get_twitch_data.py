@@ -84,7 +84,7 @@ def save_data_to_json(data: list):
     }
 
     # Write dictonary to JSON file
-    with open("ressources/latest_fetch.json", "w", encoding="utf-8") as file:
+    with open("ressources/latest_fetch_twitch.json", "w", encoding="utf-8") as file:
         json.dump(data_dict, file)
 
 
@@ -94,7 +94,7 @@ def load_data_from_json() -> dict:
     :return: dict
     """
     # Read JSON file to dictionary
-    with open("ressources/latest_fetch.json", encoding="utf-8") as file:
+    with open("ressources/latest_fetch_twitch.json", encoding="utf-8") as file:
         data_dict = json.load(file)
 
     return data_dict
@@ -147,6 +147,12 @@ async def send_message_multiple(message, data, games):
                 url=current_link
                 # color=0x00ff00
             )
+
+            # Set thumbnail
+            embed_class.set_thumbnail(
+                url="https://d2u4zldaqlyj2w.cloudfront.net/ba8810e8-f985-43bc-a889-8ba2b0dfea48/favicon.ico"
+            )
+
             # Add inline field with weblink
             embed_class.add_field(name="**Open in browser**", value=current_link, inline=False)
             # Add image to footer
@@ -174,6 +180,12 @@ async def send_message_single(message, data, games):
         url="https://gaming.amazon.com/home"
         # color=0x00f1f1
     )
+
+    # Set thumbnail
+    embed_class.set_thumbnail(
+        url="https://d2u4zldaqlyj2w.cloudfront.net/ba8810e8-f985-43bc-a889-8ba2b0dfea48/favicon.ico"
+    )
+
     images = []
 
     # Add each game as a field to the embed
