@@ -11,7 +11,8 @@
     <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="docker"/></a>
 </p>
 
-A discord bot to check for available content on Twitch Prime Gaming and posting it in the discord chat.
+A discord bot to check for available content on Twitch Prime Gaming and Epic Games Store and posting it in the discord 
+chat.
 
 ### Contents
 - [Setup (for non-technical users)](#setup)
@@ -77,10 +78,12 @@ in the config file.
 Make sure the bot has access to the channel you are using. If the bot appears in the user list of that channel, everything
 should be set up correctly.
 
-| Command         | Description                                                                                                     |
-|-----------------|-----------------------------------------------------------------------------------------------------------------|
-| `!twitch`       | Displays current content from the prime gaming website. If available, stored data will be used (max 24h old).   |
-| `!twitch fetch` | Displays current content from the prime gaming website. Always tries to fetch new data. This might take longer. |
+| Command         | Description                                                                                                          |
+|-----------------|----------------------------------------------------------------------------------------------------------------------|
+| `!twitch`       | Displays current content from the prime gaming website. If available, stored data will be used (max 24h old).        |
+| `!twitch fetch` | Displays current content from the prime gaming website. Always tries to fetch new data. This might take longer.      |
+| `!epic`         | Displays current content from the epic games store website. If available, stored data will be used (max 24h old).    |
+| `!epic fetch`   | Displays current content from the epic games store website. Always tries to fetch new data. This might take longer.  |
 
 <a name="screenshots"></a>
 # Screenshots
