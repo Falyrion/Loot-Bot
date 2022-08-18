@@ -1,4 +1,4 @@
-# Twitch Prime Loot Discord Bot
+# Loot Bot - Discord Bot for free content on Twitch Prime Gaming and Epic Games
 
 <p>
     <!-- Python --->
