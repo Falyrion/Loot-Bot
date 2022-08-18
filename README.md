@@ -114,8 +114,3 @@ Since fetching new data takes some time, data will be stored locally in a JSON f
 
 This is wrapped in a discord bot built using the [Discord Python API](https://discordpy.readthedocs.io/en/stable/index.html). The 
 discord bot then runs in a Docker container.
-
-
-# TODO
-
-- Change "via FalyBot" in the embeds
