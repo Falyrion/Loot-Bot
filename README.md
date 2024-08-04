@@ -14,6 +14,8 @@
 A discord bot to check for available content on Twitch Prime Gaming and Epic Games Store and posting it in the discord 
 chat.
 
+> ❗ **Disclaimer: Maintenance of this project is currently on halt. Many web scraping methods might no longer work due to changes in the target websites. Furthermore, discord.py is no longer maintained by its developers, therefor a rewrite of this project using pycord would be necessary.**
+
 ### Contents
 - [Setup (for non-technical users)](#setup)
   - [Step 1: Setting up a discord bot](#setup1)
